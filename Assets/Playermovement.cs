@@ -30,7 +30,7 @@ public class Playermovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             //Om groundchecken är true så kommer funktionen hända.
-            if(groundCheck.isgrounded == true)
+            if(groundCheck.isgrounded > 0)
             { 
                 //Rbodyns velocity ändras fast velocityn på x kommer behållas, fast på y kommer våran jumpspeed variabel göra så vi "hoppar"
             rbody.velocity = new Vector2(

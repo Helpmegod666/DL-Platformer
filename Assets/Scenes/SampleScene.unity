@@ -587,6 +587,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 114240355921587660, guid: 7ae3840d54dcd3a46a0352dc0fa88299,
+        type: 2}
+      propertyPath: sceneToLoad
+      value: Level2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ae3840d54dcd3a46a0352dc0fa88299, type: 2}
   m_IsPrefabAsset: 0
@@ -4899,7 +4904,7 @@ GameObject:
   - component: {fileID: 2109165251}
   m_Layer: 10
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

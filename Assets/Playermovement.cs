@@ -5,6 +5,7 @@ using UnityEngine;
 public class Playermovement : MonoBehaviour
 {
 
+    public float starterSpeed = 6f;
     public float moveSpeed = 6f;
     public float jumpSpeed = 1f;
 
@@ -38,5 +39,22 @@ public class Playermovement : MonoBehaviour
                 jumpSpeed);
             }
         }
+
+        // Detta är för mitt shadowvision script, jag känner att jag inte kan fixa att man inte kan se fiender ensam hemma så jag gör att man går långsammare.
+        if (Input.GetKey(KeyCode.V))
+        {
+            moveSpeed = moveSpeed / 2;
+
+            if (moveSpeed < starterSpeed / 2)
+            {
+                moveSpeed = starterSpeed / 2;
+            }
+        }
+
+        else
+        {
+            moveSpeed = starterSpeed;
+        }
+       
     }
 }

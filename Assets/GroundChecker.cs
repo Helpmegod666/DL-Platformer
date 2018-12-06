@@ -10,6 +10,10 @@ public class GroundChecker : MonoBehaviour
     {
         if (collision.tag == "Ground")
         {
+            if (isgrounded <= 0)
+            {
+                isgrounded = 1;
+            }
             isgrounded++;
         }
     }
@@ -22,7 +26,7 @@ public class GroundChecker : MonoBehaviour
         }
 
         //Fixar buggen när jag använder min shadowVision i en vägg blir det permament 1 efter jag "exitar" en trigger som har taggen ground.
-        if (isgrounded <= 1)
+        if (isgrounded >= 1)
         {
             isgrounded = 0;
         }
